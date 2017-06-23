@@ -1,0 +1,7 @@
+#ifndef __CLIENTENUMERATION_H__
+#define __CLIENTENUMERATION_H__
+
+
+
+
+#endif // !__CLIENTENUMERATION_H__

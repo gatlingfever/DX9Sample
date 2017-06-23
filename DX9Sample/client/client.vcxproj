@@ -18,6 +18,23 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\reference\include\Constant.h" />
+    <ClInclude Include="..\reference\include\Define.h" />
+    <ClInclude Include="..\reference\include\Enumeration.h" />
+    <ClInclude Include="..\reference\include\Macro.h" />
+    <ClInclude Include="code\Client.h" />
+    <ClInclude Include="code\WndClass.h" />
+    <ClInclude Include="include\ClientConstant.h" />
+    <ClInclude Include="include\ClientDefine.h" />
+    <ClInclude Include="include\ClientEnumeration.h" />
+    <ClInclude Include="include\ClientMacro.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\Client.cpp" />
+    <ClCompile Include="code\entrance.cpp" />
+    <ClCompile Include="code\WndClass.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{8B8B822C-7AEE-4598-B75A-749EC2CA2783}</ProjectGuid>
@@ -118,8 +135,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
