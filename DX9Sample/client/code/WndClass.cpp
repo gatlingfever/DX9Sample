@@ -24,12 +24,12 @@ HRESULT CWndClass::InitWindow(HINSTANCE & hInstance)
 	wcex.cbClsExtra = 0;
 	wcex.cbWndExtra = 0;
 	wcex.hInstance = m_hInstance;
-	wcex.hIcon = NULL;
+	wcex.hIcon = nullptr;
 	wcex.hCursor = LoadCursor(NULL, IDC_ARROW);
 	wcex.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
 	wcex.lpszMenuName = nullptr;
 	wcex.lpszClassName = TEXT("WindowClass");
-	wcex.hIconSm = NULL;
+	wcex.hIconSm = nullptr;
 	if (!RegisterClassEx(&wcex))
 		return E_FAIL;
 
