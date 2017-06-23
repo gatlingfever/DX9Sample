@@ -11,7 +11,7 @@ public:
 
 public:
 	void	OnInit			(HINSTANCE& hInstance);
-	int		Run				();
+	void	Run				();
 
 private:
 	void	OnProcess		();
