@@ -13,7 +13,7 @@ void CClient::OnInit(HINSTANCE & hInstance)
 	GET_SINGLE(CWndClass)->InitWindow(hInstance);
 }
 
-int CClient::Run()
+void CClient::Run()
 {
 	MSG msg;
 	msg.message = WM_NULL;
@@ -24,7 +24,7 @@ int CClient::Run()
 			if (msg.message == WM_QUIT)
 			{
 				OnRelease();
-				return 0;
+				return;
 			}
 
 			TranslateMessage(&msg);
